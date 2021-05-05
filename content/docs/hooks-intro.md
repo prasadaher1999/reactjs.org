@@ -12,12 +12,12 @@ import React, { useState } from 'react';
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
+  const [fruit, setCount] = useState("apple");
 
   return (
     <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
+      <p>You fav fruit is {fruit} </p>
+      <button onClick={() => setCount("banana")}>
         Click me
       </button>
     </div>
